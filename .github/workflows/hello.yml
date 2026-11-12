@@ -20,5 +20,9 @@ jobs:
           echo "Commit: ${{ github.sha }}"
           echo "Runner OS: ${{ runner.os }}"
 
+
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
       - name: List files
         run: ls -la
